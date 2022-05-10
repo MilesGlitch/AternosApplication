@@ -1,0 +1,18 @@
+{
+  "name": "aternos",
+  "version": "0.2.2",
+  "description": "Aternos Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build"
+  },
+  "author": {
+    "name": "MilesGlitch",
+    "email": "milesmikhailov@gmail.com"
+  },
+  "devDependencies": {
+    "electron": "^17.1.2",
+    "electron-builder": "^22.14.13"
+  }
+}
