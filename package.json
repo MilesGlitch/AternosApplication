@@ -9,7 +9,6 @@
   },
   "author": {
     "name": "MilesGlitch",
-    "email": "milesmikhailov@gmail.com"
   },
   "devDependencies": {
     "electron": "^17.1.2",
