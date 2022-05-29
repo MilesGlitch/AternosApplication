@@ -4,7 +4,7 @@
   "description": "Aternos Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . --user-data-dir='DEBUG'",
     "build": "electron-builder build"
   },
   "author": {
