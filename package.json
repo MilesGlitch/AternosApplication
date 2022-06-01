@@ -1,14 +1,14 @@
 {
   "name": "aternos",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Aternos Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron . --user-data-dir='DEBUG'",
+    "start": "electron . --user-data-dir=DEBUG",
     "build": "electron-builder build"
   },
   "author": {
-    "name": "MilesGlitch",
+    "name": "MilesGlitch"
   },
   "devDependencies": {
     "electron": "^17.1.2",

@@ -18,8 +18,8 @@ else{
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 1500,
-    height: 900,
+    width: 854,
+    height: 480,
     autoHideMenuBar: true,
     frame: global.frame, // NOT REQUIRED! Feel free to remove.
     titleBarStyle: global.titleBarStyle, // NOT REQUIRED! Feel free to remove.
