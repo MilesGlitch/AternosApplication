@@ -1,10 +1,10 @@
 {
   "name": "aternos",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Aternos Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron . --user-data-dir=DEBUG",
+    "start": "electron . --user-data-dir=DEBUG --enable-logging=electron_debug.log",
     "build": "electron-builder build"
   },
   "author": {

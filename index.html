@@ -16,8 +16,14 @@
       <button id="devTools-isOpen" onclick="closeDevTools()"><i class="fa-light fa-square-code"></i></button>
     </div>
     <div class="viewport">
-      <webview id="main" src="https://aternos.org/servers/"></webview>
+      <webview id="main" src="https://aternos.org/servers/" nodeintegration></webview>
     </div>
+    <script>
+      var webview = document.getElementsByClassName("header-link-exaroton")
+      
+      
+      //webview.insertCSS('html,header{ .header {height: 228px;} !important;}')
+      </script>
     <script src="./src/js/controls.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
-const {app, BrowserWindow} = require('electron')
-
+const {app, BrowserWindow , session} = require('electron')
 if (process.platform == 'darwin') { // NOT REQUIRED! Feel free to remove.
   app.whenReady().then(() => {
     global.frame = false;
@@ -15,7 +14,6 @@ else{
     global.frame = true;
     global.titleBarStyle = 'hidden';
   })}
-
 function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 854,
