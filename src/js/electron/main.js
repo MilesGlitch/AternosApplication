@@ -1,5 +1,6 @@
-const {app, BrowserWindow , session} = require('electron')
-if (process.platform == 'darwin') { // NOT REQUIRED! Feel free to remove.
+const {app, BrowserWindow , session, Menu} = require('electron')
+const path = require('path');
+if (process.platform == 'darwin') {
   app.whenReady().then(() => {
     global.frame = false;
     global.titleBarStyle = 'hiddenInset';
@@ -19,16 +20,19 @@ function createWindow () {
     width: 854,
     height: 480,
     autoHideMenuBar: true,
-    frame: global.frame, // NOT REQUIRED! Feel free to remove.
-    titleBarStyle: global.titleBarStyle, // NOT REQUIRED! Feel free to remove.
+    frame: global.frame,
+    titleBarStyle: global.titleBarStyle,
     titleBarOverlay: {
       color: '#191919',
       symbolColor: 'white'
     },
     webPreferences: {
-      webviewTag: true // Required for any webview to be loaded
+      webviewTag: true,
+      devTools:true,
+      preload: path.join(__dirname,'../../js/electron/preload.js')
     }
   })
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('./src/index.html')
 }
+
 app.whenReady().then(() => {createWindow()})

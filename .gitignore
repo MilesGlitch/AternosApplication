@@ -2,3 +2,5 @@ node_modules
 dist
 DEBUG
 .vscode
+package-lock.json
+build/icon.png_old
