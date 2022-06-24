@@ -13,8 +13,5 @@
   "devDependencies": {
     "electron": "^17.4.8",
     "electron-builder": "^22.14.13"
-  },
-  "dependencies": {
-    "got": "^12.1.0"
   }
 }
