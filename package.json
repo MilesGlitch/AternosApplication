@@ -1,6 +1,6 @@
 {
   "name": "aternos",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Aternos Application",
   "main": "src/js/electron/main.js",
   "scripts": {
