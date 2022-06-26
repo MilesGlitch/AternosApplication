@@ -42,13 +42,13 @@ body {
 .controls button:hover {
     background: #0003;
     transition: 0.3s background;
+    -webkit-app-region: no-drag;
 }
 
 svg.svg-inline--fa.fa-pipe {
     margin-right: 5px;
     color: white;
     opacity: 0.2;
-    -webkit-app-region: no-drag;
 }
 button#devTools-isOpen {
     background: rgb(255 255 255 / 25%);
